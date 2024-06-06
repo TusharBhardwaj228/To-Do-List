@@ -4,7 +4,7 @@ const app = express();
 const tasks = require('./routes/tasks.js')
 const {dbConnect} = require('./db/connection.js');
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT;
 
 
 app.use(express.json());
