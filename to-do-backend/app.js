@@ -6,6 +6,7 @@ const {dbConnect} = require('./db/connection.js');
 
 const port = process.env.PORT;
 
+app.use(express.static('../to-do-frontend'));
 
 app.use(express.json());
 
